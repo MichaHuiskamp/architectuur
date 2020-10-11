@@ -1,0 +1,240 @@
+body{
+  background-color: gray;
+  font-size: 17px;
+  font-family: arial, helvetica, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+
+#container{
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  position: static;
+  transition: transform 2s;
+
+}
+
+/*#container:hover{
+	transform: rotate(360deg);
+}*/
+
+/* --------- Header ------------*/
+
+/* -- navigatie in de header ---*/
+
+nav{
+  position: static;
+  z-index: 80;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  top: 15px;
+}
+
+nav ul{
+  margin: 0;
+  padding: 5px;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li{
+  width: 25%;
+  margin: 0 2%;
+  font-weight: bold;
+  /*border-left: 1px solid black;*/
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:hover{
+	color: rgb(160,100,0);
+}
+/* --- Header --- */
+
+header{
+  display: flex;
+}
+/* --- Linker kolom in de header --- */
+
+#links{
+  background-color: rgb(200,200,200);
+  width: 30%;
+  height: 360px;
+  /*float: left;*/
+  position: relative;
+  padding: 20px 5%;
+}
+
+#links p{
+  margin-top: 260px;
+  margin-left: 10%;
+}
+
+
+#plaatje_links{
+  background-image: url("../images/pexels-photo-836731.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 130px;
+  width: 140%;
+  z-index: 40;
+  position: static;
+  top: 25%;
+  border: 4px solid rgb(200,200,200);
+}
+
+
+/* --- rechter kolom in de header ---*/
+
+#rechts{
+  background-image: url("../images/Roof-Glass-Roof-Frankfurt-Modern-Architecture-660137.jpg");
+  background-size: cover;
+  width: 60%;
+  height: 400px;
+  /*float: left;*/
+  z-index: 20;
+  position: static;
+}
+
+#kleur_rechts{
+  width: 30%;
+  height: 320px;
+  position: static;
+  background-color: rgb(160,100,0);
+  top: 15%;
+  left: 10%;
+}
+
+/* In deze div is de h1 90 graden gedraaid
+daardoor gebeurt er iets raars met de top margin/ padding
+Dat is opgelost door een margin top in vw te gebruiken.
+Hiervoor is ook de box-sizing op border-box gezet, zodat de hoogte
+van de div niet meegroeit */
+
+#tekst_rechts{
+  box-sizing: border-box;   /*Bij padding-top in vw wordt anders de div te groot...*/
+  width: 50%;
+  height: 250px;
+  position: static;
+  background-color: rgba(0,0,0,0.6);
+  top: 20%;
+  left: 20%;
+
+  color: white;
+  padding-left: 22%;
+  padding-top: 5vw;
+}
+
+#tekst_rechts h1{
+  font-size: 1.8em;
+  transform: rotate(90deg);
+}
+
+/* ----main ---*/
+
+main{
+  height: 300px;
+  width: 100%;
+  /*background-color: white;*/
+  display: flex;
+  /*clear: both;*/
+}
+
+.kleurkolom{
+  height: 100%;
+  /*float: left;*/
+}
+
+.kleurkolom:nth-of-type(1){
+  background-color: gray;
+  width: 4%;
+}
+
+.kleurkolom:nth-of-type(2){
+  background-color: rgb(50,50,55);
+  width: 1%;
+}
+
+.kleurkolom:nth-of-type(3){
+  background-color: rgb(160,100,0);
+  width: 5%;
+  border-left: 4px solid saddlebrown;
+}
+
+#maintekst{
+  padding-top: 10px;
+  padding-left: 1%;
+  width: 91%;
+  position: static;
+  height: 100%;
+}
+
+#maintekst img{
+	height: 165px;
+	width: 30%;
+	object-fit: cover;
+	margin-left: 1.5%;
+}
+
+main h2{
+  width: 50%;
+  background-color: rgba(0,0,0,0.6);
+  position: static;
+  padding: 2px 10px;
+  left: -6%;
+  padding-left: 6%;
+  color: white;
+  margin: 5px;
+
+}
+
+main p{
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+/* --- footer --- */
+
+footer{
+  background-color: rgb(200,200,200);
+  width: 100%;
+  height: 70px;
+  position: static;
+}
+
+#footerplaatje{
+  height: 100%;
+  width: 60%;
+  background-image: url("../images/building-london-modern-architecture-1068545.jpg");
+  background-size: 200%;
+  position: static;
+
+}
+
+#footertransparant{
+  width: 70%;
+  height: 55px;
+  background-color: rgba(0,0,0,0.6);
+  position: static;
+  top: 8px;
+  left: 8%;
+}
+#footerkleur{
+  position: static;
+  width: 70%;
+  height: 40px;
+  background-color: rgb(160,100,0);
+  top: 15px;
+  left: 27%;
+  color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+#footerkleur p{
+  font-size: 0.8em;
+  font-weight: bold;
+}
